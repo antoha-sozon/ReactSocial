@@ -1,7 +1,6 @@
 import React, { Component } from 'react'; 
 import './App.css';
- 
-import Form from './components/Form.js';
+  
 import Footer from './components/Footer.js'; 
 import Page from './components/Page.js'; 
 
