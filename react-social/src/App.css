@@ -1,0 +1,142 @@
+input::placeholder {
+	color: rgba(255, 255, 255, .7);
+	font-family: 'Balthazar', serif;
+}
+
+.login-content {
+	display: flex;
+    height: 100vh;
+    min-height: 600px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: url('./i/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.login-left h1 {
+	font-size: 60px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 10px #4e4e4e;
+}
+
+.login-left h2 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #1378b5; 
+    text-align: center;
+}
+
+.login-left p {
+    font-size: 18px;
+    margin: 0;
+    color: #1378b5;
+    text-align: center;
+}
+
+.login-left a {
+    font-size: 18px; 
+    color: #1378b5; 
+    text-decoration: underline;
+}
+
+.login-right {
+	width: 50%;
+	display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #cdcdcd;
+	padding: 20px 0;
+}
+
+.logo {
+	max-width: 50%;
+	margin:  0 auto 50px;
+}	
+
+.logo img{
+	max-width: 100%;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .15);
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+.login-form input,
+.login-form button {
+	margin: 0 0 15px 0;
+	width: 100%;
+	padding: 10px 20px 10px 40px;
+	box-sizing: border-box;
+	border-width: 0;
+	outline: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Balthazar', serif;
+	
+}
+
+.login-form input {
+	background-color: rgba(255, 255, 255, 0);
+	border-bottom: 1px solid #1378b5;
+}
+
+.login-form label {
+	position: relative;
+}
+
+.login-form label:after {
+	position: absolute;
+	font-family: "FontAwesome"; 
+	top: 50%;
+	left: 10px;
+	width: 20px;
+	height: 20px; 
+	text-align: center;
+	color: #1378b5;
+	transform: translateY(-50%);
+}
+
+.login-form label:nth-child(1):after { 
+	content:"\f007"; 
+}
+
+.login-form label:nth-child(2):after { 
+	content:"\f084"; 
+}
+
+.login-form button {
+    background-color: #1277b5;
+    padding: 10px;
+    margin: 15px 0 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form p a {
+	color: #fff;
+}
