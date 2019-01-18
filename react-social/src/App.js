@@ -4,6 +4,7 @@ import './App.css';
 import Footer from './components/Footer.js'; 
 import Page from './components/Page.js'; 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -36,12 +37,12 @@ class App extends Component {
         alert("Wrong name or password");
       }
    
-  } 
+  }  
 
  render() {
     const formStatus = this.state.form;
 
-    if (formStatus) {
+    if (!formStatus) {
       return ( 
         <div className="login-content">
           <div className="login-left">

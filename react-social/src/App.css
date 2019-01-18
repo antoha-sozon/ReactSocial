@@ -276,7 +276,8 @@ img {
 
 .content-right,
 .content-left {
-	width: 20%;
+	min-width: 20%;
+    flex-shrink: 0;
 }
 
 .friends,
@@ -360,8 +361,7 @@ img {
 	left: 15px;
 }
 
-.content-center {
-	width: 60%;
+.content-center { 
 	background-color: #1378b5;
     border-radius: 5px;
 	margin: 0 10px;
@@ -369,6 +369,7 @@ img {
 	box-sizing: border-box;
     outline: 1px dashed #fff;
     outline-offset: -10px; 
+    flex-grow: 1;
 }
 
 .send-posts {
@@ -467,4 +468,255 @@ img {
 	color: #1378b5;
 	font-synthesis: 30px;
 	margin: 0 40px;
+}
+
+.page-footer {
+    margin-top: 50px;
+    background-color: #1378b5;
+    outline: 1px dashed #fff;
+    outline-offset: -10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.page-footer p{
+    color: #fff;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 30px 0;
+    position: relative;
+}
+
+.track:after {
+    content:  '';
+    position: absolute;
+    width: 400px;
+    height: 2px;
+    background-color: #fff;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.track-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.track-icon a {
+    color: #1378b5;
+    font-size: 35px;
+}
+
+.track-info {
+    flex-grow: 1;
+    margin: 0 20px;
+    border-left: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.track-info p{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 25px;
+}
+.track-info span { 
+    margin-top: 10px;
+    color: rgba(255, 255, 255, .4);
+    font-size: 18px;
+}
+
+.track-duration {
+    min-width: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.load-more a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.load-more a i{
+    font-size: 18px;
+    margin-right: 10px; 
+}       
+
+.games {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game { 
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: 1px dashed #1378b5;
+    outline-offset: -10px;
+}
+
+.game-image {
+    min-height: 80px;
+    margin-bottom: 10px;
+    border: 1px solid #8fd5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #1378b5;
+}
+
+.game-info a {
+    text-decoration: none;
+    text-align: center
+}
+
+.game-info p {
+    padding: 0;
+    margin: 0 0 5px 0;
+    color: #1378b5;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.game-info span {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #1378b5;
+    font-size: 15px;
+}
+
+.messenger { 
+    display: flex;
+    align-items: start;
+    justify-content: space-between; 
+}
+
+.messenger-left {
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    min-width: 20%;
+    height: 499px;
+    overflow-y: auto;
+}
+
+.messenger-left a,
+.messenger-left span {
+    color: #1378b5;
+}
+
+.messenger-left .f-logo {
+    margin-right: 10px;
+}
+
+.messenger-left li {
+    border-bottom: 1px solid #1378b524;
+}
+
+.messenger-left li:last-child {
+    border-bottom: none;
+}
+
+.messenger-right {
+    flex-grow: 1;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    border-left: 1px solid #cdcdcd;
+}
+
+.messenger-chat {
+    width: 100%;
+    border: 1px solid #cdcdcd; 
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.messenger-chat .load-more a{
+    color: #29aeff;
+    margin-top: 0;
+}
+
+.messenger-chat p {
+    padding: 0;
+    margin: 0;
+}
+
+.chat-me p,
+.chat-your p {
+    background-color: #29aeff;
+    border:  1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff; 
+    margin: 10px 0;
+} 
+
+.chat-your {
+    text-align: right;
+}
+
+.chat-your p {
+    color: #1378b5;
+    background-color: #fff;
+    border:  1px solid #29aeff;
+} 
+
+.setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: #fff;
+    margin: 10px 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #358bbf;
+}
+
+.setting-name p {
+    font-size: 25px;
+    margin: 0;
+    padding: 0; 
+}
+
+.setting-control p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0; 
+}
+
+.setting-change a {
+    font-size: 18px;
+    color: #fff;
 }

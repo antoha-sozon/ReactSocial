@@ -1,18 +1,29 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';  
+import { Link } from "react-router-dom";
 
 class PageLeft extends Component {
   render() {
-    return ( 
+    return (  
 		<div className="content-left">
 			<div className="menu">
-				<h3>Menu</h3>
+				<h3>Menu</h3> 
 				<ul className="menu-ul">
-					<li><a href="/">Home</a></li>
-					<li><a href="#">My Music</a></li>
-					<li><a href="#">My Game</a></li>
-					<li><a href="#">My message</a></li>
-					<li><a href="#">My Settings</a></li> 
-				</ul>
+					<li>
+						<Link to="/">Home</Link>
+					</li>
+					<li>
+						<Link to="/music">My Music</Link>
+					</li>
+					<li>
+						<Link to="/game">My Game</Link>
+					</li>
+					<li>
+						<Link to="/message">My message</Link>
+					</li>
+					<li>
+						<Link to="/settings">My Settings</Link>
+					</li>
+				</ul> 
 			</div> 			
 		</div> 
     );

@@ -8,7 +8,7 @@ class PageCenter extends Component {
 			<div className="send-posts">
 				<form>
 					<textarea placeholder="Send new post..." />
-					<button type="submith">Send</button>
+					<button type="submit">Send</button>
 				</form>
 			</div>
 			<div className="posts">
