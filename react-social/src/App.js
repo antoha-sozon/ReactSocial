@@ -22,14 +22,13 @@ class App extends Component {
     this.setState({
        [e.target.id]: e.target.value
     }); 
-  console.log(this.state);
   }
 
   handleSubmit(e) {
     e.preventDefault();
 
-    const formLogin = this.state.login;
-    const formPassword = this.state.password;
+    const formLogin = this.state.login,
+          formPassword = this.state.password;
 
     if (formLogin === 'Vasiliy' && formPassword === 'Pupkin') {
          this.setState({ form: false }, () =>  console.log(this.state));   
@@ -42,7 +41,7 @@ class App extends Component {
  render() {
     const formStatus = this.state.form;
 
-    if (!formStatus) {
+    if (formStatus) {
       return ( 
         <div className="login-content">
           <div className="login-left">

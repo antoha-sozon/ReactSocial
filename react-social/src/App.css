@@ -117,13 +117,12 @@ img {
 .login-form label:after {
 	position: absolute;
 	font-family: "FontAwesome"; 
-	top: 50%;
+	top: 10px;
 	left: 10px;
 	width: 20px;
 	height: 20px; 
 	text-align: center;
-	color: #1378b5;
-	transform: translateY(-50%);
+	color: #1378b5; 
 }
 
 .login-form label:nth-child(1):after { 
@@ -719,4 +718,86 @@ img {
 .setting-change a {
     font-size: 18px;
     color: #fff;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    z-index: 999;
+}
+
+.modal-content {
+    min-width: 700px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-form {
+    width: 100%;
+    margin: 10px 0;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+}
+
+.modal-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 5px 10px;
+    min-height: 250px;
+    max-height: 250px;
+    outline: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cdcdcd; 
+    color: #000;
+    font-size: 18px;
+    font-family: 'Balthazar', serif; 
+}   
+
+.modal-form button {
+    background-color: #1277b5;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Balthazar', serif;
+    text-transform: uppercase; 
+    width: 100%; 
+}
+
+.modal-content .modal-close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #1277b5;
+    font-size: 20px;
+}
+
+.modal-form h3{
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.menu-ul-active {
+    font-size: 25px;
 }
